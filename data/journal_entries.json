@@ -1,0 +1,26 @@
+[
+    {
+        "month": "January 2024",
+        "monthId": "2024-01",
+        "title": "Month 1 Adventures",
+        "content": "This month has been full of firsts! Baby started smiling consciously and loves tummy time. We took lots of naps together. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "pictures": ["images/placeholder_jan_1.jpg", "images/placeholder_jan_2.jpg"],
+        "milestones": ["First conscious smile", "Enjoys tummy time", "Responds to familiar sounds"]
+    },
+    {
+        "month": "February 2024",
+        "monthId": "2024-02",
+        "title": "Growing So Fast!",
+        "content": "Baby is now babbling a lot and trying to reach for toys. Sleep is still a bit unpredictable, but we're getting there. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "pictures": ["images/placeholder_feb_1.jpg"],
+        "milestones": ["Started cooing and babbling", "Reaching for toys", "Recognizes primary caregivers"]
+    },
+    {
+        "month": "March 2024",
+        "monthId": "2024-03",
+        "title": "Discovering the World",
+        "content": "Rolling over is the new favorite activity! Also, very interested in different textures and sounds. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "pictures": ["images/placeholder_mar_1.jpg", "images/placeholder_mar_2.jpg"],
+        "milestones": ["Rolling over (both ways)", "Shows interest in textures", "Laughs out loud"]
+    }
+]
