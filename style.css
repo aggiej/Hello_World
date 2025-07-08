@@ -1,0 +1,252 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', 'Roboto', 'Arial', sans-serif; /* Updated font stack */
+    line-height: 1.65; /* Slightly increased line height for readability */
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    background: #50b3a2;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-family: 'Nunito', sans-serif; /* More playful font for main title */
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for better alignment and wrapping */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items in the navigation bar */
+}
+
+header nav ul li {
+    /* display: inline; */ /* No longer needed with flex */
+    margin-right: 10px; /* Adjusted margin */
+    margin-left: 10px; /* Adjusted margin */
+    margin-bottom: 5px; /* For wrapped items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #50b3a2;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+/* Journal Entry Styling */
+.journal-entry {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px; /* Increased margin */
+    border-radius: 8px; /* Slightly more rounded corners */
+    background: #fff; /* Cleaner background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+}
+
+.journal-entry h3 {
+    color: #50b3a2; /* Theme color for entry title */
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.journal-entry p {
+    margin-bottom: 15px;
+    line-height: 1.7; /* Improved readability */
+    color: #555; /* Softer text color */
+}
+
+.pictures-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    gap: 10px; /* Space between images */
+    margin-top: 10px; /* Space above the picture container */
+    margin-bottom: 10px;
+}
+
+.journal-entry img { /* Applied to images within .journal-entry specifically */
+    width: 150px;    /* Fixed width for uniformity */
+    height: 150px;   /* Fixed height for uniformity */
+    border-radius: 4px;
+    border: 1px solid #eee; /* Lighter border for images */
+    object-fit: cover; /* Crop images to fit, maintaining aspect ratio */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow for images */
+}
+
+/* Milestone Styling */
+.milestones-list { /* General list for all milestones in the #milestones section */
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Styling for month headers (h4) within the milestones list */
+#milestones .milestones-list > h4 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #50b3a2; /* Theme color */
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.2em;
+}
+/* Ensure no double H4 styling if it's from journal entry */
+.journal-entry .milestones-list > h4 {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    border-bottom: none;
+}
+
+
+/* Styling for the inner list (ul) of milestones for a specific month */
+#milestones .milestones-list ul {
+    list-style: none; /* Changed from disc for a cleaner look */
+    padding-left: 10px; /* Indent milestone items */
+    margin-bottom: 15px;
+}
+.journal-entry .milestones-list ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.milestone { /* Individual milestone item li */
+    padding: 8px 5px; /* Adjusted padding */
+    margin-bottom: 6px;
+    font-size: 0.95em;
+    color: #444;
+    background-color: #f9f9f9; /* Light background for each milestone */
+    border-left: 3px solid #50b3a2; /* Theme color accent */
+    border-radius: 3px;
+}
+
+/* Navigation Link Styling */
+#main-nav ul {
+    padding: 0.5em 0; /* Add some padding around nav links */
+}
+
+#main-nav ul li {
+    margin-right: 15px; /* Space between nav items */
+    padding: 5px 0;
+}
+
+#main-nav ul li a {
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#main-nav ul li a:hover {
+    background-color: #409182; /* Darker shade on hover */
+    color: #fff;
+}
+
+#main-nav ul li.active-nav-link a {
+    background-color: #3a8272; /* Even darker for active link */
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styling for "No content" messages */
+#journal p:only-child,
+#milestones p:only-child { /* Targets p when it's the only child, good for empty messages */
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px dashed #ddd;
+}
+
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .journal-entry img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #main-nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center items when stacked */
+    }
+
+    #main-nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px; /* Space between stacked items */
+        width: 100%; /* Make nav items take full width for easier tapping */
+        text-align: center;
+    }
+     #main-nav ul li a {
+        display: block; /* Make the whole area clickable */
+     }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .journal-entry h3 {
+        font-size: 1.2em;
+    }
+    .journal-entry img {
+        width: 100px; /* Further reduce image size */
+        height: 100px;
+    }
+    .pictures-container {
+        justify-content: center; /* Center images if they don't fill the row */
+    }
+}
